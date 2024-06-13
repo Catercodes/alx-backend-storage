@@ -1,7 +1,6 @@
--- Create a table of user if it does not exits
--- Creating a Table 
-CREATE TABLE IF NOT EXITS users(
-    id INT AUTO_INCREMENT PRIMARY key,
-    email VARCHAR(255) NOT NULL UNiQUE,
+-- Use IF NOT EXISTS to ensure the table is only created if it doesn't already exist
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
     name VARCHAR(255)
 );
