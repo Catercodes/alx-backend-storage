@@ -1,0 +1,2 @@
+//a script that lists all documents with name="Holberton school" in the collection school
+db.school.find({ "_id" : ObjectId("6672cca11415b9a0c1064f34"), "name" : "Holberton school" })
